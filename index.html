@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/423aad324a.js" crossorigin="anonymous"></script>
+
     <!-- tailwind and daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,6 +20,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary-style': '#F00 0%, #FF8938 100%',
                     }
                 }
             }
@@ -29,13 +33,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 
     <style>
-        .manrope-fonts{
+        .manrope-fonts {
             font-family: 'Manrope', sans-serif;
         }
     </style>
 </head>
 
-<body>
+<body class="manrope-fonts">
+    <header class="container max-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h1 class=" text-5xl lg:text-7xl font-extrabold">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House</h1>
+                    <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds..
+                    </p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+
+                <!-- rating -->
+                <div>
+                    <img src="images/banner.png" class="max-w-sm" />
+                    
+                    <div class=" -mt-16 flex items-center gap-4 rounded-lg drop-shadow-2xl bg-white p-5 w-60">
+                        <i class="fa-solid fa-star text-3xl text-amber-400 "></i>
+                        <div>
+                            <h3>5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
 
 </body>
 
